@@ -1,3 +1,10 @@
 **.DS_Store
 node_modules
 build
+/.idea/.gitignore
+/.idea/graph-algorithms-visualised-turkish.iml
+/.idea/modules.xml
+/package-lock.json
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/vcs.xml
+/.idea/jsLibraryMappings.xml
