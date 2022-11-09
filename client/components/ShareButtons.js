@@ -6,14 +6,14 @@ function twitterShare() {
   var tags = [ 'workshape' ],
     text = 'A Visual Guide to Graph Traversal Algorithms by Workshape.io';
 
-  let url = `http://workshape.github.io/visual-graph-algorithms`,
+  let url = 'http://fatih-yavuz.github.io/visual-graph-algorithms',
     twitterUrl = buildTwitterUrl({ url, text, tags });
 
   openModal(twitterUrl, 'Tweet', 700, 260);
 }
 
 function facebookShare() {
-  let url = `http://workshape.github.io/visual-graph-algorithms`,
+  let url = 'http://fatih-yavuz.github.io/visual-graph-algorithms',
     facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
 
   openModal(facebookUrl, 'Share', 560, 610);
@@ -21,7 +21,7 @@ function facebookShare() {
 
 function buildTwitterUrl(options) {
   return [
-    `https://twitter.com/intent/tweet?tw_p=tweetbutton`,
+    'https://twitter.com/intent/tweet?tw_p=tweetbutton',
     `&url=${encodeURI(options.url)}`,
     `&text=${options.text}`
   ].join('');
@@ -74,7 +74,7 @@ function getScreenSize() {
     };
 }
 
-const ShareButtons = (props) => {
+const ShareButtons = () => {
   return <div className='ShareButtons'>
     <button className='pure-button button-twitter' onClick={twitterShare}>
         <i className='icon-twitter'></i>&nbsp;
